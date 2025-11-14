@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+.Main-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  font-family: 'Inter', sans-serif;
+  min-height: 80vh;
+  color: #0A4182;
+  background-image: url("src/assets/bg1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.left-text p {
+  margin: 10px 0;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.login-prompt button,
+.explore-jobs button {
+  background: linear-gradient(90deg, #FF7F50, #FFA500);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 127, 80, 0.4);
+}
+
+.login-prompt button:hover,
+.explore-jobs button:hover {
+  background: linear-gradient(90deg, #FFA500, #FF7F50);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 127, 80, 0.5);
+}
+
+.login-prompt,
+.explore-jobs {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .login-prompt button,
+  .explore-jobs button {
+    width: 80%;
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+}
+
+.right-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+.right-img img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  object-fit: contain;
+}
+
+@media (max-width: 992px) {
+  .left-text p {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Main-cont {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .right-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .right-img img {
+    width: 100%;
+    max-width: none;
+  }
+
+  .left-text p {
+    font-size: 2rem;
+  }
+
+    .search {
+    flex-direction: column;
+    align-items: center;
+    /* gap: 10px; */
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .search input {
+    width: 90%;
+  }
+
+  .search button {
+    width: 30%;
+    margin-left: 0;
+    padding: 10px 0;
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+  font-family: "Source Sans Pro", sans-serif;
+  gap: 50px;
+}
+
+.left-heading h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  color: #343434;
+}
+
+.right-text {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+  max-width: 550px;
+}
+
+@media (max-width: 900px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 40px;
+  }
+
+  .left-heading h1 {
+    font-size: 2rem;
+  }
+
+  .right-text {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+.job-type {
+  text-align: center;
+  padding: 80px 100px;
+  background-color: #f9f9f9;
+  background-image: url("src/assets/bg1.png");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Inter', sans-serif;
+  color: #0A4182;
+}
+
+.job-type .top {
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.job-type .top h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.job-type .top p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.card-cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.job-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.job-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.leftimg {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+}
+
+.leftimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.description {
+  text-align: left;
+}
+
+.description h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.description p {
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .job-type {
+    padding: 60px 20px;
+  }
+
+  .job-type .top h1 {
+    font-size: 2rem;
+  }
+}

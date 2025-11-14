@@ -1,0 +1,235 @@
+.about-page {
+  font-family: 'Inter', sans-serif;
+  color: #0A4182;
+}
+
+.about-main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  background-image: url("src/assets/bg1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-left-text p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.about-left-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-right-img img {
+  width: 100%;
+  max-width: 700px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.about-info-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+  gap: 50px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.about-left-heading h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  color: #343434;
+}
+
+.about-right-text {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+  max-width: 550px;
+}
+
+.about-features-section {
+  text-align: center;
+  padding: 80px 100px;
+  background-color: #f9f9f9;
+  font-family: 'Inter', sans-serif;
+}
+
+.about-features-top h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-features-top p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.about-features-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.about-feature-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.about-feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.about-feature-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.about-feature-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.about-mission-section {
+  background-color: #f4f6f8;
+  padding: 60px 100px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 50px auto;
+}
+
+.about-mission-section h2 {
+  font-size: 2rem;
+  color: #0a3d62;
+  margin-bottom: 20px;
+}
+
+.about-mission-section p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.about-stats-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 100px;
+  gap: 40px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.stat-card h3 {
+  font-size: 2rem;
+  color: #1e3799;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.about-testimonials-section {
+  background-color: #fff;
+  padding: 60px 100px;
+  text-align: center;
+}
+
+.about-testimonials-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #0a3d62;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.testimonial-card {
+  background-color: #f4f6f8;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.testimonial-card h4 {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #1e3799;
+}
+
+.testimonial-card span {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.about-resources-section {
+  padding: 60px 100px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+
+.about-resources-section h2 {
+  font-size: 2rem;
+  color: #0a3d62;
+  margin-bottom: 20px;
+}
+
+.about-resources-section ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  color: #333;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .about-mission-section, 
+  .about-stats-section, 
+  .about-testimonials-section, 
+  .about-resources-section {
+    padding: 40px 20px;
+  }
+  .about-stats-section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-main-section, .about-info-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .about-right-img img {
+    max-width: 100%;
+  }
+  .about-left-text p {
+    font-size: 1rem;
+  }
+  .about-left-heading h1 {
+    font-size: 2rem;
+  }
+  .about-right-text {
+    font-size: 0.9rem;
+  }
+  .about-features-cards {
+    grid-template-columns: 1fr;
+  }
+}
